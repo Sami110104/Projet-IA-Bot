@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lille Addict | Bons plans & Le Bot Welsh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="logo">
+            <a href="https://lilleaddict.fr">
+                <img src="https://lilleaddict.fr/wp-content/uploads/2020/11/logo-rouge.svg" alt="Lille Addict Logo">
+            </a>
+        </div>
+        <div class="nav-buttons">
+            <a href="#" class="btn btn-rouge">Événements</a>
+            <a href="#" class="btn btn-rouge" style="background:white; color:var(--lille-bleu); border-color:var(--lille-bleu);">Mon Compte</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Que faire à <span class="qce-lille-text">Lille</span> ?</h1>
+        <p>Découvre le meilleur de la métropole lilloise : bons plans, activités et actus.</p>
+    </section>
+
+    <!-- GRILLE D'ARTICLES -->
+    <main class="container">
+        <h2 class="section-title">Nos derniers articles à ne pas rater !</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="card-img" style="background-image: url('https://lilleaddict.fr/wp-content/uploads/2025/01/capture-decran-2026-01-07-a-15.17.15-1024x998.png');">
+                    <span class="pastille">Actus</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">Il y a 2 jours</div>
+                    <h3>Carnaval de Dunkerque 2026 : l'agenda complet</h3>
+                    <div style="margin-top:auto;">
+                        <a href="#" class="btn btn-rouge" style="padding: 5px 15px; font-size:12px;">Lire la suite</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img" style="background-image: url('https://lilleaddict.fr/wp-content/uploads/2025/11/village-de-noel-moyenne.jpeg');">
+                    <span class="pastille">Sortir</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">Il y a 3 jours</div>
+                    <h3>Que faire à Lille et aux alentours pour le Nouvel An ?</h3>
+                    <div style="margin-top:auto;">
+                        <a href="#" class="btn btn-rouge" style="padding: 5px 15px; font-size:12px;">Lire la suite</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img" style="background-image: url('https://lilleaddict.fr/wp-content/uploads/2025/11/ben09508-moyenne.jpeg');">
+                    <span class="pastille">Miam</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">Il y a 1 semaine</div>
+                    <h3>Les meilleurs Welshs de Lille selon les Lillois</h3>
+                    <div style="margin-top:auto;">
+                        <a href="#" class="btn btn-rouge" style="padding: 5px 15px; font-size:12px;">Lire la suite</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img" style="background-image: url('https://lilleaddict.fr/wp-content/uploads/2023/11/image_7-29-e1746191577679.webp');">
+                    <span class="pastille">Sport</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">Il y a 2 semaines</div>
+                    <h3>Les meilleures salles d'escalade à Lille</h3>
+                    <div style="margin-top:auto;">
+                        <a href="#" class="btn btn-rouge" style="padding: 5px 15px; font-size:12px;">Lire la suite</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- BOT WELSH -->
+    <div id="welsh-bot-container">
+        <div id="chat-window">
+            <div class="chat-header">
+                <span>🧀 Welly le Welsh</span>
+                <span class="close-chat" onclick="toggleChat()">×</span>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="message bot-msg">
+                    Salut biloute ! 👋 Moi c'est Welly. Je suis chaud comme un welsh sortant du four. Tu cherches quoi ?
+                </div>
+            </div>
+            <div class="chat-options">
+                <button class="option-btn" onclick="sendMessage('J\'ai la dalle !')">🍔 J'ai la dalle</button>
+                <button class="option-btn" onclick="sendMessage('On boit un coup ?')">🍻 On boit un coup ?</button>
+                <button class="option-btn" onclick="sendMessage('Une blague Ch\'ti')">🤡 Raconte une blague</button>
+            </div>
+        </div>
+
+        <div id="welsh-avatar" onclick="toggleChat()">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Welsh_rabbit_%2834038476632%29.jpg/640px-Welsh_rabbit_%2834038476632%29.jpg" alt="Welsh Bot">
+            <div class="bot-notification">1</div>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
